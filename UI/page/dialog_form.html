@@ -9,37 +9,47 @@
     <link rel="stylesheet" href="../css/components/input_type.css">
     <link rel="stylesheet" href="../content/font/fontawesome-5.15.1/css/all.css">
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <h1>combox selected</h1>
+
 
     <div class="container">
-        <h2>Giới tính</h2>
+        <label>Giới tính</label>
         <div class="selected">
-            <input type="text" name="" id="input_selected" class="dropdown">
+            <input type="text" name="" id="input_selected" class="selected-box">
             <button class="btn" id="btn_selected">
                 <i class="fas fa-angle-down" style="font-size: 24px; color: rgba(87, 85, 85, 0.733);"></i>
             </button>
         </div>
+        <div class="select-box">
+            <div class="options-container active" id="select_box">
+                <div class="option" id="nam">
+                    <input type="radio" class="radio" id="nam" name="Gender">
+                    <label for="nam">Nam</label>
+                </div>
+                <div class="option" id="nu">
+                    <input type="radio" class="radio" id="nu" name="Gender">
+                    <label for="nu">Nữ</label>
+                </div>
+                <div class="option" id="other">
+                    <input type="radio" class="radio" id="other" name="Gender">
+                    <label for="other">Khác</label>
+                </div>
+            </div>
+
+        </div>
     </div>
 
+    <script src="../js/main.js"></script>
 
 
 
 
 
 
-    <!-- Select2 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
-
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Select2 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 </body>
 
 </html>

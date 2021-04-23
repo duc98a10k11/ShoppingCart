@@ -1,10 +1,16 @@
 $(document).ready(function() {
-    input_focus();
+    $("button").click(function() {
+        $("#select_box").removeClass("active")
+    });
+    optionClick();
 });
 
-function input_focus() {
-    $("#input_selected").focus(function() {
-        $("#btn_selected").css({ "border": "1px solid #019160" })
+function optionClick() {
+    $(".option").click(function() {
+        var hientai = $(this).text();
+        console.log(hientai)
+        $("#input_selected").text(hientai)
+        $("#select_box").addClass("active")
 
     });
 }
